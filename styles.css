@@ -11,38 +11,32 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    /* Stack name and navbar vertically */
     align-items: center;
+    /* Center items */
     padding: 10px 20px;
 }
 
 .name {
     font-weight: bold;
     font-size: 1.5em;
-    /* Adjusted font size */
 }
 
 section {
     padding: 40px;
-    /* Add padding to all sections */
     max-width: 1200px;
-    /* Limit the width of the section */
     margin: 0 auto;
-    /* Center the section */
 }
 
 h1 {
     font-size: 2.5em;
-    /* Increase the header size */
     margin-bottom: 10px;
-    /* Space below the header */
 }
 
 p {
     font-size: 1.2em;
-    /* Larger font size for better readability */
     line-height: 1.5;
-    /* Space between lines for readability */
 }
 
 nav ul {
@@ -53,29 +47,23 @@ nav ul {
 
 nav ul li {
     margin: 0 10px;
-    /* Adjusted margin for spacing */
 }
 
 nav ul li:not(:last-child)::after {
     content: '|';
-    /* Divider between sections */
     margin-left: 10px;
     color: white;
-    /* Divider color */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s, font-weight 0.3s;
-    /* Smooth transition */
 }
 
 nav ul li a:hover {
     color: #007bff;
-    /* Hover color */
     font-weight: bold;
-    /* Bold on hover */
 }
 
 main {
@@ -85,4 +73,26 @@ main {
 
 section {
     margin: 40px 0;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 768px) {
+    nav {
+        align-items: center;
+        /* Center navbar items */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li:not(:last-child)::after {
+        content: none;
+    }
 }
