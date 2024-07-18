@@ -8,6 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        /* Define the fade-in animation */
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Class to apply fade-in animation */
+        .fade-in {
+            animation: fade-in 0.6s ease-out;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,22 +44,24 @@
     <main>
         <section id="projects"
             style="padding: 60px 40px; max-width: 900px; margin: 0 auto; text-align: center; background: #ffffff; border-radius: 10px;">
-            <h2 style="font-size: 2.5em; margin-bottom: 20px; color: #333;">Projects</h2>
-        
-            <div style="margin-bottom: 40px;">
+            <h2 style="font-size: 2.5em; margin-bottom: 20px; color: #333;" class="fade-in">Projects</h2>
+
+            <div style="margin-bottom: 40px;" class="fade-in">
                 <h3 style="font-size: 2em; color: #007BFF;">🏡 Gawa</h3>
                 <img src="GAWA.jpg" alt="Gawa Project"
                     style="width: 100%; max-width: 300px; border-radius: 10px; margin-bottom: 15px;">
                 <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: none;">
                     <p style="font-size: 1.1em; color: #555;">
-                        A home services mobile application featuring a fairness-aware recommendation system that helps users
+                        A home services mobile application featuring a fairness-aware recommendation system that helps
+                        users
                         find the best service providers based on their needs and preferences.
                     </p>
                     <p style="font-size: 1.1em; color: #555;">
                         Technologies:
                         <span
                             style="background: #007BFF; color: white; padding: 5px 10px; border-radius: 5px; transition: background 0.3s;"
-                            onmouseover="this.style.background='#0056b3'" onmouseout="this.style.background='#007BFF'">Google
+                            onmouseover="this.style.background='#0056b3'"
+                            onmouseout="this.style.background='#007BFF'">Google
                             Cloud Platform</span>,
                         <span
                             style="background: #007BFF; color: white; padding: 5px 10px; border-radius: 5px; transition: background 0.3s;"
@@ -53,14 +74,15 @@
                     </p>
                 </div>
             </div>
-        
-            <div style="margin-bottom: 40px;">
+
+            <div style="margin-bottom: 40px;" class="fade-in">
                 <h3 style="font-size: 2em; color: #007BFF;">🚍 Trip Management & Payroll System</h3>
-                <img src="BOYEMMA.jpg".jpg" alt="Trip Management Project"
+                <img src="BOYEMMA.jpg" .jpg" alt="Trip Management Project"
                     style="width: 100%; max-width: 300px; border-radius: 10px; margin-bottom: 15px;">
                 <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: none;">
                     <p style="font-size: 1.1em; color: #555;">
-                        This web-based system is tailored for logistics' business flow, enabling efficient trip management and
+                        This web-based system is tailored for logistics' business flow, enabling efficient trip
+                        management and
                         payroll calculations.
                     </p>
                     <p style="font-size: 1.1em; color: #555;">
@@ -80,37 +102,54 @@
                     </p>
                 </div>
             </div>
-        
-            <div style="margin-bottom: 40px;">
+
+            <div style="margin-bottom: 40px;" class="fade-in">
                 <h3 style="font-size: 2em; color: #007BFF;">🎉 Event Management System</h3>
                 <!-- <img src="path/to/event-management-thumbnail.jpg" alt="Event Management Project"
                     style="width: 100%; max-width: 300px; border-radius: 10px; margin-bottom: 15px;"> -->
                 <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: none;">
                     <p style="font-size: 1.1em; color: #555;">
-                        Developed for <em>Mapúa Malayan Colleges Laguna</em>, this website streamlines event management for
+                        Developed for <em>Mapúa Malayan Colleges Laguna</em>, this website streamlines event management
+                        for
                         college organizations.
                     </p>
                     <p style="font-size: 1.1em; color: #555;">
                         Technologies:
                         <span
                             style="background: #007BFF; color: white; padding: 5px 10px; border-radius: 5px; transition: background 0.3s;"
-                            onmouseover="this.style.background='#0056b3'" onmouseout="this.style.background='#007BFF'">.NET
+                            onmouseover="this.style.background='#0056b3'"
+                            onmouseout="this.style.background='#007BFF'">.NET
                             WebForms</span>,
                         <span
                             style="background: #007BFF; color: white; padding: 5px 10px; border-radius: 5px; transition: background 0.3s;"
-                            onmouseover="this.style.background='#0056b3'" onmouseout="this.style.background='#007BFF'">Microsoft
+                            onmouseover="this.style.background='#0056b3'"
+                            onmouseout="this.style.background='#007BFF'">Microsoft
                             SQL</span>
                     </p>
                 </div>
             </div>
-        
-            <!-- <h2 style="font-size: 2em; margin-top: 40px; color: #333;">🌟 More Projects Coming Soon!</h2>
-            <p style="font-size: 1.1em; color: #555;">
+
+            <!--
+            <h2 style="font-size: 2em; margin-top: 40px; color: #333;" class="fade-in">🌟 More Projects Coming Soon!</h2>
+            <p style="font-size: 1.1em; color: #555;" class="fade-in">
                 Stay tuned for additional projects showcasing my skills and creativity. I am always exploring new ideas and
                 technologies to bring innovative solutions to life!
-            </p> -->
+            </p>
+            -->
         </section>
     </main>
+    <script>
+        // JavaScript for hover effect on technology spans
+        const spans = document.querySelectorAll('span[onmouseover]');
+        spans.forEach(span => {
+            span.addEventListener('mouseover', function () {
+                this.style.background = '#0056b3';
+            });
+            span.addEventListener('mouseout', function () {
+                this.style.background = '#007BFF';
+            });
+        });
+    </script>
 </body>
 
 </html>

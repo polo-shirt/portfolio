@@ -8,6 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        /* Additional styles for animations */
+        .animated {
+            opacity: 0;
+            animation: fadeInAnimation 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <script>
+        // JavaScript to trigger animations when the page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            var animatedElements = document.querySelectorAll('.animated');
+            animatedElements.forEach(function (element) {
+                element.classList.add('fadeInAnimation');
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -23,27 +51,24 @@
         </nav>
     </header>
     <main>
-        <section id="home"
+        <section id="home" class="animated"
             style="display: flex; flex-direction: column; align-items: center; padding: 50px 40px; max-width: 1200px; margin: 0 auto;">
             <img src="me.png" alt="Stephen Paul Tongol"
                 style="width: 300px; height: auto; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
             <div style="max-width: 600px; text-align: center;">
-                <h1 style="font-size: 2.0em; margin-bottom: 10px;">Hello! I'm Stephen Paul Tongol</h1>
-                <p style="font-size: 1.2em; line-height: 1.5;">
-                    I am 22 years old and from Laguna. Currently, I am a Computer Science student with aspirations of becoming a
-                    data scientist and software developer.
-                    I've always been more familiar with software development, but it was during my internship that I discovered
-                    my love for data science.
+                <h1>Hello! I'm Stephen Paul Tongol</h1>
+                <p>
+                    I am 22 years old and from Laguna. Currently, I am a Computer Science student with aspirations of
+                    becoming a data scientist and software developer. I've always been more familiar with software
+                    development, but it was during my internship that I discovered my love for data science.
                 </p>
-                <p style="font-size: 1.2em; line-height: 1.5;">
-                    I have a passion for learning and believe that it never stops, especially in this ever-evolving industry.
-                    Outside of my career, I have other interests as well. I LOVE making music; in fact, I have music available
-                    on Spotify.
-                    I find so much joy in writing music and sharing it with the world.
+                <p>
+                    I have a passion for learning and believe that it never stops, especially in this ever-evolving
+                    industry. Outside of my career, I have other interests as well. I LOVE making music; in fact, I have
+                    music available on Spotify. I find so much joy in writing music and sharing it with the world.
                 </p>
             </div>
         </section>
-
     </main>
 </body>
 

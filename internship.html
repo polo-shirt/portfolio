@@ -8,6 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        /* Additional CSS for animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,104 +43,186 @@
     <main>
         <section id="internship"
             style="padding: 60px 40px; max-width: 900px; margin: 0 auto; text-align: center; background: #ffffff; border-radius: 10px;">
-            <h3
-                style="font-size: 2.5em; margin-bottom: 30px; color: #333; border-bottom: 2px solid #007BFF; padding-bottom: 10px;">
-                Internship Experience</h3>
-        
-            <div style="margin-bottom: 40px;">
+            <h3 style="font-size: 2.5em; margin-bottom: 30px; color: #333; border-bottom: 2px solid #007BFF; padding-bottom: 10px;"
+                class="fade-in-up">Internship Experience</h3>
+
+            <div style="margin-bottom: 40px;" class="fade-in-up">
                 <h4 style="font-size: 1.8em; color: #007BFF; margin-bottom: 15px;">Company Background</h4>
-                <img src="STLOGO.jpg" alt="STMicroelectronics Logo" style="max-width: 300px; margin-bottom: 20px; padding-top: 20px;" />
+                <img src="STLOGO.jpg" alt="STMicroelectronics Logo"
+                    style="max-width: 300px; margin-bottom: 20px; padding-top: 20px;" />
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-                    I had the incredible opportunity to intern at <strong>STMicroelectronics, Inc.</strong>, a powerhouse in the
-                    semiconductor industry. With its rich history dating back to 1987, STMicroelectronics has become a global
-                    leader, producing cutting-edge microchips that power everything from electric vehicles to smartphones. Located
-                    in the Light and Industry Science Park II in Calamba, Laguna, the company is committed to innovation and
-                    sustainability, operating with a vision to positively impact lives through technology. As one of the largest
-                    semiconductor manufacturers, with a workforce of over 50,000 employees worldwide, STMicroelectronics serves a
+                    I had the incredible opportunity to intern at <strong>STMicroelectronics, Inc.</strong>, a
+                    powerhouse in the
+                    semiconductor industry. With its rich history dating back to 1987, STMicroelectronics has become a
+                    global
+                    leader, producing cutting-edge microchips that power everything from electric vehicles to
+                    smartphones. Located
+                    in the Light and Industry Science Park II in Calamba, Laguna, the company is committed to innovation
+                    and
+                    sustainability, operating with a vision to positively impact lives through technology. As one of the
+                    largest
+                    semiconductor manufacturers, with a workforce of over 50,000 employees worldwide, STMicroelectronics
+                    serves a
                     diverse clientele, including industry giants like Apple, Samsung, and Tesla.
                 </p>
             </div>
-        
-            <div style="margin-bottom: 40px;">
+
+            <div style="margin-bottom: 40px;" class="fade-in-up">
                 <h4 style="font-size: 1.8em; color: #007BFF; margin-bottom: 15px;">Nature of Assignments</h4>
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-                    During my time in the <strong>Manufacturing Data Science (MDS)</strong> department, I was deeply immersed in the
-                    fascinating world of data analytics and machine learning. My primary assignment was to contribute to the
-                    <strong>Materials Efficiency Project</strong>, where I was entrusted with pivotal tasks that shaped the project's
-                    trajectory. My journey began with meticulous data preparation and engaging in Exploratory Data Analysis (EDA). This
-                    initial phase was crucial as it allowed me to delve into the structure of thte data, identify quality issues, and select
+                    During my time in the <strong>Manufacturing Data Science (MDS)</strong> department, I was deeply
+                    immersed in the
+                    fascinating world of data analytics and machine learning. My primary assignment was to contribute to
+                    the
+                    <strong>Materials Efficiency Project</strong>, where I was entrusted with pivotal tasks that shaped
+                    the project's
+                    trajectory. My journey began with meticulous data preparation and engaging in Exploratory Data
+                    Analysis (EDA). This
+                    initial phase was crucial as it allowed me to delve into the structure of thte data, identify
+                    quality issues, and select
                     features that would drive model performance.
                 </p>
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-                    Armed with Python and SQL, I not only learned to manipulate and analyze data but also became adept at
-                    creating robust data pipelines. Using the <strong>Dataiku</strong> platform, I designed and implemented ETL
-                    processes that ensured seamless data integration. My involvement in bi-weekly meetings with colleagues was
+                    Armed with Python and SQL, I not only learned to manipulate and analyze data but also became adept
+                    at
+                    creating robust data pipelines. Using the <strong>Dataiku</strong> platform, I designed and
+                    implemented ETL
+                    processes that ensured seamless data integration. My involvement in bi-weekly meetings with
+                    colleagues was
                     equally significant, fostering collaboration and alignment within the project team.
                 </p>
             </div>
-        
-            <div style="margin-bottom: 40px;">
+
+            <div style="margin-bottom: 40px;" class="fade-in-up">
                 <h4 style="font-size: 1.8em; color: #007BFF; margin-bottom: 15px;">Key Projects</h4>
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-                    One of the highlights of my internship was the focus on <strong>Material Efficiency</strong>. This project
-                    aimed to tackle challenges such as wastage and over-consumption of materials within the manufacturing
+                    One of the highlights of my internship was the focus on <strong>Material Efficiency</strong>. This
+                    project
+                    aimed to tackle challenges such as wastage and over-consumption of materials within the
+                    manufacturing
                     process. Through data exploration, I was able to uncover patterns and identify opportunities for
-                    optimization that could lead to significant cost savings. The culmination of this work involved predictive
-                    modeling to forecast future material usage, ensuring proactive planning for resource management. A significant aspect of this process was
-                    the creation of a robust data pipeline to facilitate seamless data flow. <strong>See the photo below for
-                    example.</strong>
+                    optimization that could lead to significant cost savings. The culmination of this work involved
+                    predictive
+                    modeling to forecast future material usage, ensuring proactive planning for resource management. A
+                    significant aspect of this process was
+                    the creation of a robust data pipeline to facilitate seamless data flow. <strong>See the photo below
+                        for
+                        example.</strong>
                 </p>
-                <img src="pipeline.png" alt="Pipeline Example" style="max-width: 900px; margin-bottom: 20px; padding-top: 20px;" />
+                <img src="pipeline.png" alt="Pipeline Example"
+                    style="max-width: 900px; margin-bottom: 20px; padding-top: 20px;" />
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-                    Another fascinating aspect of my role involved <strong>Parts Cropping</strong>, a vital task in a broader
-                    initiative aimed at detecting anomalies in dies produced through image processing. This process required
-                    meticulous attention to detail, as I developed algorithms to crop images accurately, ensuring they were
+                    Another fascinating aspect of my role involved <strong>Parts Cropping</strong>, a vital task in a
+                    broader
+                    initiative aimed at detecting anomalies in dies produced through image processing. This process
+                    required
+                    meticulous attention to detail, as I developed algorithms to crop images accurately, ensuring they
+                    were
                     centered and ready for analysis.
                 </p>
             </div>
-        
-            <div style="margin-bottom: 40px;">
+
+            <div style="margin-bottom: 40px;" class="fade-in-up">
                 <h4 style="font-size: 1.8em; color: #007BFF; margin-bottom: 15px;">Learnings and Growth</h4>
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-                    My internship experience was a transformative journey that extended far beyond technical skill acquisition.
-                    I honed my abilities in data preparation and analysis, enhancing my statistical knowledge and familiarizing
-                    myself with advanced statistical methods. Utilizing tools like <strong>Dataiku</strong> and <strong>TIBCO Spotfire</strong>, I learned to create
-                    interactive dashboards that provided real-time insights into materials efficiency, empowering stakeholders
+                    My internship experience was a transformative journey that extended far beyond technical skill
+                    acquisition.
+                    I honed my abilities in data preparation and analysis, enhancing my statistical knowledge and
+                    familiarizing
+                    myself with advanced statistical methods. Utilizing tools like <strong>Dataiku</strong> and
+                    <strong>TIBCO Spotfire</strong>, I learned to create
+                    interactive dashboards that provided real-time insights into materials efficiency, empowering
+                    stakeholders
                     with data-driven decision-making capabilities.
                 </p>
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-                    Beyond the technical skills, I developed crucial soft skills that are invaluable in a corporate environment.
-                    Navigating structured workflows, adhering to timelines, and collaborating with diverse teams were lessons
-                    that prepared me for future challenges. I learned the importance of effective communication, adapting to
+                    Beyond the technical skills, I developed crucial soft skills that are invaluable in a corporate
+                    environment.
+                    Navigating structured workflows, adhering to timelines, and collaborating with diverse teams were
+                    lessons
+                    that prepared me for future challenges. I learned the importance of effective communication,
+                    adapting to
                     various interactions, whether in meetings or through written correspondence.
                 </p>
             </div>
-        
-            <div style="margin-bottom: 40px;">
+
+            <div style="margin-bottom: 40px;" class="fade-in-up">
                 <h4 style="font-size: 1.8em; color: #007BFF; margin-bottom: 15px;">Realizations and Reflections</h4>
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
                     Throughout this journey, I realized that a career in Data Science mirrors the essence of
-                    <strong>continuous learning</strong> and <strong>collaboration</strong> found in academia, albeit with increased
-                    complexity and urgency. This experience solidified my passion for the field, highlighting the crucial balance
+                    <strong>continuous learning</strong> and <strong>collaboration</strong> found in academia, albeit
+                    with increased
+                    complexity and urgency. This experience solidified my passion for the field, highlighting the
+                    crucial balance
                     between technical expertise and soft skills. I learned that
-                    <strong>camaraderie</strong> and <strong>teamwork</strong> are essential to fostering a productive work environment,
-                    while <strong>discipline</strong> proved more vital than fleeting <strong>motivation</strong>. Embracing challenges
-                    with <strong>resilience</strong> became key to my growth, and this journey reaffirmed my commitment to
+                    <strong>camaraderie</strong> and <strong>teamwork</strong> are essential to fostering a productive
+                    work environment,
+                    while <strong>discipline</strong> proved more vital than fleeting <strong>motivation</strong>.
+                    Embracing challenges
+                    with <strong>resilience</strong> became key to my growth, and this journey reaffirmed my commitment
+                    to
                     lifelong learning and collaboration in the ever-evolving landscape of Data Science.
                 </p>
             </div>
-        
-            <div style="margin-bottom: 40px;">
+
+            <div style="margin-bottom: 40px;" class="fade-in-up">
                 <h4 style="font-size: 1.8em; color: #007BFF; margin-bottom: 15px;">Conclusion</h4>
                 <p style="font-size: 1.1em; color: #555; line-height: 1.6;">
-                    In conclusion, my internship at STMicroelectronics was more than just a professional engagement; it was a
-                    pivotal chapter in my growth journey. The skills and insights I gained during this invaluable experience
-                    have not only equipped me for my future career in Data Science but have also instilled a sense of confidence
+                    In conclusion, my internship at STMicroelectronics was more than just a professional engagement; it
+                    was a
+                    pivotal chapter in my growth journey. The skills and insights I gained during this invaluable
+                    experience
+                    have not only equipped me for my future career in Data Science but have also instilled a sense of
+                    confidence
                     and determination to pursue my passions.
                 </p>
             </div>
         </section>
+
+        <!-- Appendices -->
+        <div style="margin-bottom: 40px;" class="fade-in-up">
+            <h4 style="font-size: 1.8em; color: #007BFF; margin-bottom: 15px;">Appendices</h4>
+            <ul style="list-style-type: none; padding: 0;">
+                <li style="font-size: 1.1em; color: #555; line-height: 1.6; margin-bottom: 10px;"><a href="CV.pdf"
+                        style="text-decoration: underline; color: #007BFF;" target="_blank">CV</a></li>
+                <li style="font-size: 1.1em; color: #555; line-height: 1.6; margin-bottom: 10px;"><a
+                        href="Full_Report.pdf" style="text-decoration: underline; color: #007BFF;" target="_blank">Full
+                        Report</a></li>
+                <li style="font-size: 1.1em; color: #555; line-height: 1.6; margin-bottom: 10px;"><a
+                        href="Training_Plan.pdf" style="text-decoration: underline; color: #007BFF;"
+                        target="_blank">Training Plan</a></li>
+                <li style="font-size: 1.1em; color: #555; line-height: 1.6; margin-bottom: 10px;"><a
+                        href="Certificate_of_Completion.pdf" style="text-decoration: underline; color: #007BFF;"
+                        target="_blank">Certificate of Completion</a></li>
+            </ul>
+        </div>
     </main>
+    <script>
+        // JavaScript for fade-in animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.fade-in-up');
+            elements.forEach(element => {
+                element.style.opacity = 0;
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+            });
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.intersectionRatio > 0) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.5
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
 </body>
 
 </html>
